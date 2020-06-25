@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="hs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>CoronaVirus Test</title>
+</head>
+<body class="pt-4">
+    <div class="container">
+            <div id="CategModal" class="shadow modal fade" role="dialog">
+                    <div class="modal-dialog modal-md" role="content">
+                        <div class="modal-content mild">
+                            <div class="modal-body shadow-lg">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div class="col mt-3">
+                                    <h2 class="text-secondary heads text-center">You are Placed Under the Mild Category!</h2>
+                                </div>
+                                <div class="row pl-2 pr-2 content">
+                                    <div class="col-6 shadow btncar p-4">
+                                        <p class="d-block text-center text-secondary">Schedule a Video Meeting with a Doctor to Examine You More Thoroughly</p>
+                                        <button type="submit" class="col-5 offset-4 btn btncolor btn-sm rounded-0 shadow-sm text-white"><a href="Doctors.html" class="text-white text-decoration-none">Doctors</a></button>                                     </div>
+                                    <span class="vl ml-2 mr-2"></span>
+                                    <div class="col shadow btncar p-4">
+                                        <p class="text-center text-secondary">Take a Look on the Nearest Hospial to You!</p>
+                                        <button type="submit" class="col-11 ml-2 btn btncolor btn-sm rounded-0 shadow-sm text-white"><a href="HospitalsAround.html" class="text-white text-decoration-none">Hospitals</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="SkipModal" class="shadow modal fade" role="dialog">
+                        <div class="modal-dialog modal-md" role="content">
+                            <div class="modal-content mild">
+                                <div class="modal-body pt-5 shadow-lg">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <div class="row pl-2 pr-2 content">
+                                        <div class="col-6 shadow btncar p-4">
+                                            <p class="d-block text-center text-secondary">Schedule a Video Meeting with a Doctor to Examine You More Thoroughly</p>
+                                            <button type="submit" class="col-5 offset-4 btn btncolor btn-sm rounded-0 shadow-sm text-white"><a href="Doctors.html" class="text-white text-decoration-none">Doctors</a></button>                                     </div>
+                                        <span class="vl ml-2 mr-2"></span>
+                                        <div class="col shadow btncar p-4">
+                                            <p class="text-center text-secondary">Take a Look on the Nearest Hospial to You!</p>
+                                            <button type="submit" class="col-11 ml-2 btn btncolor btn-sm rounded-0 shadow-sm text-white"><a href="HospitalsAround.html" class="text-white text-decoration-none">Hospitals</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div id="Categ1Modal" class="shadow modal fade" role="dialog">
+                        <div class="modal-dialog modal-md" role="content">
+                            <div class="modal-content mild">
+                                <div class="modal-body shadow-lg">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <div>
+                                    <div class="col mt-3">
+                                        <h2 class="text-secondary heads text-center">You are Placed Under the Severe Category!</h2>
+                                    </div>
+                                    <div class="row pl-2 pr-2 content  col-6 offset-3">
+                                        <div class="col shadow btncar p-4">
+                                            <p class="text-center text-secondary">Take a Look on the Nearest Hospial to You!</p>
+                                            <button type="submit" class="col-11 ml-2 btn btncolor btn-sm rounded-0 shadow-sm text-white">Hospitals Around</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div id="QCarousel" data-interval="false" class="carousel slide p-4 border-bottom" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-6">
+                                    <h1 class="text-white ml-5 heads">Which Region Are You living in?</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-5 mb-5 pt-5">
+                            <div class="col-4 offset-7 content">
+                                    <select class="form-control shadow form-control-sm">
+                                        <option value="Borg-Alarb">Borg-Alarb</option>
+                                        <option value="Sidi Bishr"> Sidi Bishr</option>
+                                        <option value=" Al Ajmi">Al Ajmi</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div role="button" id="skipQ" class="shadow btn btnopt my-auto text-white rounded-0 font-weight-bold offset-10 mt-5">Skip</div>
+                        </div>
+                    </div>
+                        <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-6">
+                                    <h1 class="text-white ml-5 heads">How Old Are You?</h1>
+                                </div>
+                                <div class="col-4 offset-2 content">
+                                    <input type="number" class="btnalign w-50 form-control rounded-0" placeholder="Your Age" name="Age">
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">When you cough, is it a dry cough?</h1>
+                                    <div class="ml-5"><span class="text-white">Click</span> <a class="text-secondary" href="https://www.mydr.com.au/respiratory-health/cough-dry-cough">here</a> <span class="text-white">for dry cough meaning</span></div>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Yes</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">No</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Do you have fever?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">No</div>
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Mild</div>
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Average</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">Severe</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Do you have itchy eyes?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Yes</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">No</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Do you have a runny nose?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Yes</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">No</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Have you been experiencing shortness of breath or breathing difficultly?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                            <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">No</div>
+                                            <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Mild</div>
+                                            <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Average</div>
+                                            <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">Severe</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Have you been experiencing tiredness?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">No</div>
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Mild</div>
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Average</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">Severe</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Do you feel you lost the senses of taste and smell?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Yes</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">No</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-7">
+                                    <h1 class="text-white ml-5 heads">Do you have a sore throat?</h1>
+                                </div>
+                                <div class="col d-block offset-2 content">
+                                    <div class="btn-group-vertical btnalign btnopt" role="group" aria-label="Button group"> 
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">No</div>
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Mild</div>
+                                        <div role="button" class="shadow btn mb-1 btncar rounded-0 font-weight-bold">Average</div>
+                                        <div role="button" class="shadow btn btncar rounded-0 font-weight-bold">Severe</div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-6">
+                                    <h1 class="text-white ml-5 heads">How long have you been infected?</h1>
+                                </div>
+                                <div class="col-4 offset-2 content">
+                                    <input type="text" class="btnalign w-50 form-control rounded-0" placeholder="Ex. 2 Days" name="Infectiontime">
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-6">
+                                    <h1 class="text-white ml-5 heads">When was it the last time you left your house?</h1>
+                                </div>
+                                <div class="col-4 offset-2 content">
+                                    <input type="text" class="btnalign w-50 form-control rounded-0" placeholder="Ex. 2 Days" name="Infectiontime">
+                                </div>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                            <div class="row ml-4" class="qbg">
+                                <div class="col-6">
+                                    <h1 class="text-white ml-5 heads">When was it the last time you had a visitor?</h1>
+                                </div>
+                                <div class="col-4 offset-2 content">
+                                    <input type="text" class="btnalign w-50 mb-1 form-control rounded-0" placeholder="Ex. 2 Days" name="Infectiontime">
+                                    <div role="button" id="done" class="shadow btn btnopt my-auto text-white rounded-0 font-weight-bold">Done</div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#QCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" id="nx" href="#QCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+    </div>
+    <footer class="text-white content" style="position: absolute; bottom: 0px; left: 20px;">
+       <p>Powered By <b>Hospitals Around</b></p> 
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#done").click(function(){
+                    $('#CategModal').modal('show');
+                })
+                $("#skipQ").click(function(){
+                    $('#SkipModal').modal('show');
+                })
+            })
+        </script>
+</body>
+</html>
